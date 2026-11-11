@@ -1,0 +1,336 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CHAIRLY - Premium chair rentals for every space and occasion.">
+    <title>CHAIRLY | Premium Chair Rentals</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Announcement Bar -->
+    <div class="announcement">
+        <p>Elevate your space with CHAIRLY. Premium comfort, delivered.</p>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">CHAIR<span>LY.</span></a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#collections">Collections</a>
+                <a href="#products">Explore Chairs</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="cart-button" id="cartButton">
+                    Bag <span id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="eyebrow">THE ART OF COMFORT</span>
+                <h1>Take a Seat.<br><em>Make it Yours.</em></h1>
+                <p>
+                    Beautiful chairs. Exceptional comfort.
+                    Flexible rentals for every space, every occasion
+                    and every lifestyle.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#products" class="btn btn-dark">Explore Collection ↗</a>
+                    <a href="#about" class="text-link">Discover CHAIRLY</a>
+                </div>
+                <div class="hero-note">
+                    <span class="gold-dot"></span>
+                    A better way to experience furniture.
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1598300056393-4aac492f4344?w=1100&q=85"
+                     alt="Luxury designer chair">
+                <div class="floating-card">
+                    <span>THE CHAIR EDIT</span>
+                    <strong>Designed for living.</strong>
+                    <a href="#products">Discover more ↗</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefits -->
+        <section class="benefits container">
+            <div><span>✦</span><p>Curated Designs</p></div>
+            <div><span>✦</span><p>Flexible Rentals</p></div>
+            <div><span>✦</span><p>Premium Comfort</p></div>
+            <div><span>✦</span><p>Made for Every Space</p></div>
+        </section>
+
+        <!-- Categories -->
+        <section class="section container" id="collections">
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">FIND YOUR STYLE</span>
+                    <h2>Explore our <em>collections.</em></h2>
+                </div>
+                <p>From focused workdays to unforgettable celebrations, find the perfect seat for every moment.</p>
+            </div>
+
+            <div class="category-grid">
+                <a href="#products" class="category-card" data-category="Office">
+                    <img src="https://images.unsplash.com/photo-1505843490701-5be5d0b0d9b1?w=700&q=80" alt="Office chairs">
+                    <div class="category-info"><span>01 / WORKSPACE</span><h3>Office Chairs ↗</h3></div>
+                </a>
+                <a href="#products" class="category-card" data-category="Gaming">
+                    <img src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?w=700&q=80" alt="Gaming chairs">
+                    <div class="category-info"><span>02 / PLAY</span><h3>Gaming Chairs ↗</h3></div>
+                </a>
+                <a href="#products" class="category-card" data-category="Dining">
+                    <img src="https://images.unsplash.com/photo-1503602642458-232111445657?w=700&q=80" alt="Dining chairs">
+                    <div class="category-info"><span>03 / GATHER</span><h3>Dining Chairs ↗</h3></div>
+                </a>
+                <a href="#products" class="category-card" data-category="Event">
+                    <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=700&q=80" alt="Event seating">
+                    <div class="category-info"><span>04 / CELEBRATE</span><h3>Event Chairs ↗</h3></div>
+                </a>
+                <a href="#products" class="category-card" data-category="Lounge">
+                    <img src="https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=700&q=80" alt="Lounge chairs">
+                    <div class="category-info"><span>05 / UNWIND</span><h3>Lounge Chairs ↗</h3></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Products -->
+        <section class="section products-section" id="products">
+            <div class="container">
+                <div class="section-heading">
+                    <div>
+                        <span class="eyebrow">THE CHAIRLY SELECTION</span>
+                        <h2>Find your perfect <em>seat.</em></h2>
+                    </div>
+                    <p>Thoughtfully selected chairs to make your everyday extraordinary.</p>
+                </div>
+
+                <div class="filter-bar" id="filterBar">
+                    <button class="filter-btn active" data-filter="All">All Chairs</button>
+                    <button class="filter-btn" data-filter="Office">Office</button>
+                    <button class="filter-btn" data-filter="Gaming">Gaming</button>
+                    <button class="filter-btn" data-filter="Dining">Dining</button>
+                    <button class="filter-btn" data-filter="Event">Event</button>
+                    <button class="filter-btn" data-filter="Lounge">Lounge</button>
+                </div>
+
+                <div class="product-grid" id="productGrid"></div>
+            </div>
+        </section>
+
+        <!-- Experience Banner -->
+        <section class="experience">
+            <div class="experience-image">
+                <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&q=85" alt="Beautiful modern interior">
+            </div>
+            <div class="experience-content">
+                <span class="eyebrow">THE CHAIRLY EXPERIENCE</span>
+                <h2>Own the experience.<br><em>Not the furniture.</em></h2>
+                <p>Why buy when you can rent? Enjoy premium designs without long-term commitments. Choose your chair, select your duration and enjoy the comfort.</p>
+                <a href="#products" class="btn btn-light">Find Your Chair ↗</a>
+            </div>
+        </section>
+
+        <!-- Rental Process -->
+        <section class="section container" id="how-it-works">
+            <div class="center-heading">
+                <span class="eyebrow">SIMPLE. FLEXIBLE. EFFORTLESS.</span>
+                <h2>Your perfect seat in <em>three steps.</em></h2>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span>01</span><div class="step-icon">⌕</div>
+                    <h3>Explore</h3>
+                    <p>Browse our curated collection and find a chair that matches your needs.</p>
+                </div>
+                <div class="step-card">
+                    <span>02</span><div class="step-icon">▤</div>
+                    <h3>Choose & Book</h3>
+                    <p>Select your rental duration and preferred start date.</p>
+                </div>
+                <div class="step-card">
+                    <span>03</span><div class="step-icon">✧</div>
+                    <h3>Enjoy</h3>
+                    <p>Experience comfort and style with your chosen chair.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <span class="eyebrow">A NEW WAY TO SIT</span>
+                <h2>Good design should be <em>accessible.</em></h2>
+                <p>At CHAIRLY, we believe that the right chair can transform a space. Our rental concept brings thoughtfully chosen seating to homes, offices, events and creative spaces without the commitment of ownership.</p>
+                <a href="#contact" class="text-link">Let's connect ↗</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1598300053653-6e6d4c0d5c35?w=900&q=85" alt="Modern designer furniture">
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="section container testimonials">
+            <div class="center-heading">
+                <span class="eyebrow">THE COMFORT CLUB</span>
+                <h2>Love where you <em>sit.</em></h2>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A beautiful way to furnish a workspace without buying everything upfront."</p>
+                    <strong>Workspace enthusiast</strong>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The idea of renting stylish furniture for special occasions is wonderful."</p>
+                    <strong>Event planner</strong>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"A simple concept with so many possibilities. Love the chair collection!"</p>
+                    <strong>Design lover</strong>
+                </div>
+            </div>
+            <p class="demo-note">Illustrative sample testimonials for website demonstration.</p>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact-section" id="contact">
+            <div class="container contact-layout">
+                <div class="contact-content">
+                    <span class="eyebrow">WE'RE HERE TO HELP</span>
+                    <h2>Let's find your <em>perfect seat.</em></h2>
+                    <p>Have a question about rentals, collections or an upcoming event? Send us a message.</p>
+                    <div class="contact-detail">
+                        <span>✉</span>
+                        <div><small>EMAIL</small><strong>hello@chairly.com</strong></div>
+                    </div>
+                    <div class="contact-detail">
+                        <span>⌖</span>
+                        <div><small>LOCATION</small><strong>Coimbatore, Tamil Nadu</strong></div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Send us a message</h3>
+                    <label for="contactName">Your name</label>
+                    <input id="contactName" type="text" placeholder="Enter your name" required>
+
+                    <label for="contactEmail">Email address</label>
+                    <input id="contactEmail" type="email" placeholder="Enter your email" required>
+
+                    <label for="contactMessage">Your message</label>
+                    <textarea id="contactMessage" rows="4" placeholder="How can we help you?" required></textarea>
+
+                    <button type="submit" class="btn btn-dark full-btn">Send Message ↗</button>
+                    <p class="form-note">Demo form – messages are not sent to a server.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-main">
+            <div>
+                <a href="#home" class="logo footer-logo">CHAIR<span>LY.</span></a>
+                <p>Rent. Relax. Repeat.</p>
+            </div>
+            <div>
+                <h4>Explore</h4>
+                <a href="#collections">Collections</a>
+                <a href="#products">All Chairs</a>
+                <a href="#how-it-works">How it works</a>
+            </div>
+            <div>
+                <h4>Company</h4>
+                <a href="#about">About us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div>
+                <h4>Follow the comfort</h4>
+                <p>Discover a more flexible way to furnish your space.</p>
+                <a href="#home">Back to top ↑</a>
+            </div>
+        </div>
+        <div class="footer-bottom container">
+            <span>© 2026 CHAIRLY. All rights reserved.</span>
+            <span>Designed for comfort. Created for you.</span>
+        </div>
+    </footer>
+
+    <!-- Cart Drawer -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h2>Your Rental Bag</h2>
+            <button id="closeCart" class="close-btn" aria-label="Close cart">×</button>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Your bag is waiting for something comfortable.</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total"><span>Estimated daily total</span><strong id="cartTotal">₹0</strong></div>
+            <button id="checkoutButton" class="btn btn-dark full-btn">Continue to Booking ↗</button>
+            <p class="form-note">Final price depends on rental duration and delivery.</p>
+        </div>
+    </aside>
+
+    <!-- Booking Modal -->
+    <div class="modal-overlay" id="bookingModal">
+        <div class="booking-modal">
+            <button class="close-btn modal-close" id="closeBooking" aria-label="Close booking">×</button>
+            <span class="eyebrow">MAKE IT YOURS</span>
+            <h2>Plan your <em>rental.</em></h2>
+            <form id="bookingForm">
+                <label for="bookingName">Full name</label>
+                <input id="bookingName" type="text" required placeholder="Your name">
+
+                <label for="bookingEmail">Email address</label>
+                <input id="bookingEmail" type="email" required placeholder="Your email">
+
+                <label for="bookingDate">Rental start date</label>
+                <input id="bookingDate" type="date" required>
+
+                <label for="rentalDuration">Rental duration</label>
+                <select id="rentalDuration" required>
+                    <option value="1">1 day</option>
+                    <option value="7">7 days</option>
+                    <option value="30">30 days</option>
+                </select>
+
+                <label for="bookingAddress">Delivery address</label>
+                <textarea id="bookingAddress" rows="2" required placeholder="Enter your address"></textarea>
+
+                <button class="btn btn-dark full-btn" type="submit">Confirm Demo Booking ↗</button>
+            </form>
+            <p class="form-note">Demo only. No actual booking or payment will take place.</p>
+        </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
